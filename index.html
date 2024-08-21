@@ -27,6 +27,7 @@
                     colors: {
                         clifford: '#da373d',
                         'primary-color': '#ABEF5F',
+                        'secondary-color': '#d4f7ae'
                     }
                 }
             }
@@ -35,8 +36,8 @@
 </head>
 
 <body class="manrope-font">
-    <header class="bg-gradient-to-t from-[#ffffff] to-[#f4f4f4]">
-        <nav class="container mx-auto">
+    <header class="bg-gradient-to-t from-[#ffffff] to-[#f4f4f4] lg:pt-10 md:pt-8 pt-6">
+        <nav class="container mx-auto mb-10">
             <div class="navbar ">
                 <div class="navbar-start">
                     <a class="btn btn-ghost  text-2xl"><i
@@ -53,11 +54,12 @@
                     </ul>
                 </div>
                 <div class="navbar-end ">
-                    <a class="p-3 border bg-white mr-2 rounded-full hidden md:block"><img src="./assets/search-01.png" alt=""></a>
-                    <a class="p-3 border bg-white mr-2 rounded-full hidden md:block"><img src="./assets/shopping-cart-01.png" alt=""></a>
-                    <a class="btn bg-primary-color rounded-full font-extrabold text-xl mr-2  hidden md:flex md:items-center md:block">Book Consult<i
+                    <a class="p-3 border bg-white mr-2 rounded-full invisible md:visible"><img src="./assets/search-01.png" alt=""></a>
+                    <a class="p-3 border bg-white mr-2 rounded-full invisible md:visible"><img src="./assets/shopping-cart-01.png"
+                            alt=""></a>
+                    <a class="btn bg-primary-color rounded-full font-extrabold text-xl mr-2 invisible md:visible">Book Consult<i
                             class="fa-solid fa-arrow-right text-white p-[6px] rounded-full bg-black -rotate-45"></i></a>
-                    <div class="dropdown border rounded-full">
+                    <div class="dropdown border rounded-full relative">
                         <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
                             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
                                 stroke="currentColor">
@@ -66,7 +68,7 @@
                             </svg>
                         </div>
                         <ul tabindex="0"
-                            class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                            class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3  p-2 shadow absolute right-2">
                             <li><a class="font-extrabold">Home</a></li>
                             <li><a>Services</a></li>
                             <li><a>Portfolio</a></li>
@@ -75,11 +77,26 @@
                         </ul>
                     </div>
                 </div>
+
             </div>
         </nav>
+        <!-- banner section starts -->
+        <section class="container mx-auto text-center flex flex-col items-center justify-center gap-3">
+            <div><img src="./assets/banner.png" alt=""></div>
+            <div class="flex flex-col items-center gap-4">
+                <h1 class="font-extrabold text-2xl md:text-4xl lg:text-6xl w-3/4">A barn house of this design has a
+                    striking appearance</h1>
+                <p class="font-medium w-3/4">The barn house captivates with its blend of rustic charm and modern
+                    sophistication, featuring weathered wood, sleek metal accents, and large windows that flood the
+                    space with natural light.</p>
+                <button class="btn bg-secondary-color rounded-full font-bold text-xl">View Details<i
+                        class="fa-solid fa-arrow-right text-black p-[6px] rounded-full bg-primary-color -rotate-45"></i></button>
+
+            </div>
+        </section>
     </header>
     <main>
-
+        
     </main>
     <footer>
 
